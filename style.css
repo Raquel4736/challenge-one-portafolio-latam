@@ -13,7 +13,7 @@ coloque nas sessões indicadas*/
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: lightgrey ;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
@@ -42,25 +42,109 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+    display: flex;
+    margin: 10px;
 
 }
+/*.title__profile{
+    width: 200px;
+}*/
+.menu__header{
+    display: flex;
+    padding: 0 30px;
+    gap: 10px;
+}
+
+.menu__list{
+       display: none;
+    }
+    .menu__list li a{
+       color: gray; 
+
+    }
+    .menu__list__item__contato{
+        display: none;
+    }
 
 /*Sección Title*/
 
 section.title{
+    .title__container{
+        text-align: end;
+         display: flex;
+        justify-content: center;
+        top: 12%;
+    }
+    .title__div{
+        display: flex;
+        gap: 10px;
+        padding: 17px;
+    }
+    .title__profile{
+        width: 33%;
+    }
+    .logo{
+        margin: 10px;
+    }
+    .title__bio{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-size: larger;
+    }
+    .title__network{
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        gap: 25px;
+        align-items: flex-start;
+    }
+    .title__subsection{
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16.44px;
+        text-align: left;
+    }
+    .title__network__item{
 
-}
+    }
+   
+} 
+    
+
 
 /*Sección About*/
 
 section.about{
+   
 
 }
-
+/*Seccion Skills*/
+section.skills{
+    .skills__line{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .title__network__item__c{
+        background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+    }
+}
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    .hobbies__line{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 10px;
+
+    }
 }
 
 /* Experiencia Académica*/
@@ -72,12 +156,55 @@ section.academic{
 /* experiencia*/
 
 section.experience{
+    .experience__img{
+width: Fill (296px)px;
+height: Hug (251px)px;
+gap: 16px;
+opacity: 0px;
+    }
 
 }
 
 /*Contacto*/
 
 section.formcontato{
+    .formcontato__contacto{
+        margin-top: 10px;
+    }
+   .formcontato__input{
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px;
+    padding: 10px 25px;
+   }
+   .formcontato__text{
+    padding: 15px;
+    background:rgb(222, 245, 253) ;
+   }
+   .formcontato__subtext{
+    font-weight: normal ;
+   }
+   .formcontato__textarea{
+    font-size: 15px;
+   }
+   .formcontato__botao{
+   margin: 0 0 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: rgb(23, 16, 240);
+    border: none;
+    border-radius: 5px;
+    transition: all 1s;
+    cursor: pointer;
+   }
+   .formcontato__botao:hover{
+    background: rgb(9, 8, 96);
+    transform: scale(1.1);
+   }
+
 
 }
 
@@ -92,8 +219,38 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
 
+@media (min-width: 1024px) {
+    .menu__header{
+    padding: 20 100px;
+    } 
+    .logo{
+        margin: 10px;
+       font-size: 10px; 
+    }
+    .menu nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 20%;
+    }
+    
+    .menu__list{
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        gap: 10px;
+        align-items: flex-start;
+        }
+    .menu__list__item__contato{
+        display: none;
+        }
+     .title__bio{
+        margin-top: 20%;
+    margin-left: 42px;
+}
+     }
+    
 /* Menú */
 
 /*title*/
